@@ -37,9 +37,9 @@
 <header>
     <h1 class="text-xl font-bold"><a href="/">My Website</a></h1>
     <div class="flex flex-wrap items-center justify-between">
-        <button><a href="/about">About</a></button>
-        <button>Projects</button>
-        <button>Contact</button>
+        <a href="/about"><button>About</button></a>
+        <a href="/projects"><button>Projects</button></a>
+        <a href="/contact"><button>Contact</button></a>
     </div>
     <button class="border-indigo-950 dark:border-gray-500 bg-gray-800 dark:bg-white text-white dark:text-black"
             on:click={toggleDarkMode}
