@@ -1,4 +1,22 @@
 @import 'tailwindcss';
+
+@import '@skeletonlabs/skeleton';
+@import '@skeletonlabs/skeleton-svelte';
+@import '@skeletonlabs/skeleton/themes/cerberus';
+@import '@skeletonlabs/skeleton/themes/pine';
+@import '@skeletonlabs/skeleton/themes/vox';
+@import '@skeletonlabs/skeleton/themes/terminus';
+@import '@skeletonlabs/skeleton/themes/rocket';
+@import '@skeletonlabs/skeleton/themes/catppuccin';
+@import '@skeletonlabs/skeleton/themes/concord';
+@import '@skeletonlabs/skeleton/themes/nosh';
+@import '@skeletonlabs/skeleton/themes/fennec';
+@import '@skeletonlabs/skeleton/themes/legacy';
+@import '@skeletonlabs/skeleton/themes/sahara';
+@import '@skeletonlabs/skeleton/themes/vintage';
+@import '@skeletonlabs/skeleton/themes/mona';
+@import '@skeletonlabs/skeleton/themes/hamlindigo';
+
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
@@ -9,24 +27,30 @@
 @layer base {
 
     html {
-        @apply bg-white dark:bg-black;
-        @apply text-black text-center dark:text-white;
+
+    }
+    body {
+        @apply bg-primary-50 dark:bg-primary-950;
+        @apply text-primary-950 text-center dark:text-primary-50;
         @apply font-mono;
-        @apply transition duration-200;
+        @apply transition duration-100;
     }
     h1 {
         @apply text-5xl;
-        @apply dark:text-cyan-500 text-red-500;
+        @apply dark:text-primary-50 text-primary-950;
     }
     h4 {
         @apply text-xl;
     }
     button {
-        @apply border-2 rounded-3xl p-2 ml-4 mr-4;
+        @apply border-4 rounded-3xl p-2 ml-4 mr-4;
         @apply cursor-pointer;
+        @apply bg-primary-50 dark:bg-primary-950;
+        @apply border-tertiary-100 dark:border-tertiary-900;
+        @apply transition duration-500;
     }
     header {
         @apply flex items-center justify-between p-4 mb-10 shadow-md;
-        @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100;
+        @apply bg-primary-100 dark:bg-primary-900 text-primary-950 dark:text-primary-50;
     }
 }

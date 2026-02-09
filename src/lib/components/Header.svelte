@@ -1,8 +1,6 @@
 <script>
     import { onMount } from 'svelte';
 
-    import lightmode from '$lib/assets/lightmode.svg'
-
     let isDark = false;
 
     // On component mount, check saved theme or system preference
@@ -41,7 +39,7 @@
         <a href="/projects"><button>Projects</button></a>
         <a href="/contact"><button>Contact</button></a>
     </div>
-    <button class="border-indigo-950 dark:border-gray-500 bg-gray-800 dark:bg-white text-white dark:text-black"
+    <button
             on:click={toggleDarkMode}
             aria-label="Toggle Dark Mode"
     >
