@@ -9,7 +9,6 @@
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
-<AppBar />
 <Header/>
 <main>
     {@render children()}
