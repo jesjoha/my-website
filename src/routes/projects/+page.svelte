@@ -1,5 +1,5 @@
 <script>
-    import { ChevronDownIcon} from "@lucide/svelte";
+    import { ChevronDownIcon, GithubIcon } from "@lucide/svelte";
     import { Accordion } from "@skeletonlabs/skeleton-svelte";
     import { slide } from "svelte/transition";
 
@@ -8,18 +8,22 @@
             id: 1,
             title: "Project 1",
             description: "This project is used to create a project",
+            link: "https://svenska.yle.fi",
         },
         {
             id: 2,
             title: "Project 2",
             description: "This project is used to create a project and this was project nr 2.",
+            link: "https://github.com",
         },
         {
             id: 3,
             title: "Project 3",
-            description: "This is the final project of the test."
+            description: "This is the final project of the test.",
+            link: "https://ecosia.org",
         }
     ];
+
 </script>
 
 <h1>Projects</h1>
@@ -44,6 +48,12 @@
                     {#if !attributes.hidden}
                         <div {...attributes} transition:slide={{ duration: 150 }}>
                             {project.description}
+                            <footer class="flex flex-row justify-between">
+                                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                                    <GithubIcon />
+                                </a>
+                                Author: Me
+                            </footer>
                         </div>
                     {/if}
                 {/snippet}
