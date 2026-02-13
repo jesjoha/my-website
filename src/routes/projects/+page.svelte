@@ -8,7 +8,7 @@
             id: 1,
             title: "Project 1",
             description: "This project is used to create a project",
-            link: "https://svenska.yle.fi",
+
         },
         {
             id: 2,
@@ -46,13 +46,15 @@
             <Accordion.ItemContent>
                 {#snippet element(attributes)}
                     {#if !attributes.hidden}
-                        <div {...attributes} transition:slide={{ duration: 150 }}>
+                        <div {...attributes} transition:slide={{ duration: 150 }} class="card border-2">
                             {project.description}
                             <footer class="flex flex-row justify-between">
-                                <a href={project.link} target="_blank" rel="noopener noreferrer">
-                                    <GithubIcon />
-                                </a>
                                 Author: Me
+                                {#if project.link}
+                                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                                        <GithubIcon />
+                                    </a>
+                                {/if}
                             </footer>
                         </div>
                     {/if}

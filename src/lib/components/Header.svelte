@@ -32,27 +32,30 @@
     });
 </script>
 
-<header>
-    <h1 class="text-xl font-bold"><a href="/">My Website</a></h1>
+<header class="items-center justify-between">
+    <h1 class="text-xl font-bold ml-10"><a href="/">My Website</a></h1>
     <div class="flex flex-wrap items-center justify-between">
         <a href="/about"><button>About</button></a>
         <a href="/projects"><button>Projects</button></a>
         <a href="/contact"><button>Contact</button></a>
     </div>
-    <Switch checked={!isDark} onCheckedChange={() => isDark = !isDark} >
-        <Switch.Control>
-            <Switch.Thumb>
-                <Switch.Context>
-                    {#snippet children(switch_)}
-                        {#if switch_().checked}
-                            <SunIcon class="size-3"/>
-                        {:else}
-                            <MoonIcon class="size-3"/>
-                        {/if}
-                    {/snippet}
-                </Switch.Context>
-            </Switch.Thumb>
-        </Switch.Control>
-        <Switch.HiddenInput />
-    </Switch>
+    <div class="mr-26">
+        <Switch checked={!isDark} onCheckedChange={() => isDark = !isDark} >
+            <Switch.Control>
+                <Switch.Thumb>
+                    <Switch.Context>
+                        {#snippet children(switch_)}
+                            {#if switch_().checked}
+                                <SunIcon class="size-4"/>
+                            {:else}
+                                <MoonIcon class="size-4"/>
+                            {/if}
+                        {/snippet}
+                    </Switch.Context>
+                </Switch.Thumb>
+            </Switch.Control>
+            <Switch.HiddenInput />
+        </Switch>
+    </div>
+
 </header>

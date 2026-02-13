@@ -45,14 +45,18 @@
         @apply text-xl;
     }
     button {
-        @apply border-4 rounded-3xl p-2 ml-4 mr-4;
+        @apply border-2 rounded-3xl p-2 ml-4 mr-4;
         @apply cursor-pointer;
         @apply bg-primary-50 dark:bg-primary-950;
-        @apply border-tertiary-100 dark:border-tertiary-900;
+        @apply border-secondary-100 dark:border-secondary-900;
         @apply transition duration-500;
+    }
+    button:hover {
+        @apply bg-primary-200 dark:bg-secondary-900;
+        @apply border-primary-400 dark:border-tertiary-900;
     }
     header {
         @apply flex items-center justify-between p-4 mb-10 shadow-md;
-        @apply bg-primary-100 dark:bg-primary-900 text-primary-950 dark:text-primary-50;
+        @apply bg-primary-100 dark:bg-primary-800 text-primary-950 dark:text-primary-50;
     }
 }
