@@ -26,7 +26,7 @@
 
 <h1>Me</h1>
 
-<p>This is me. How about that?</p>
+<p class="m-10">This is me. How about that?</p>
 <Tabs defaultValue={headings[0].title}>
     <Tabs.List>
         {#each headings as heading}
