@@ -34,11 +34,11 @@
 
 <header class="items-center justify-between">
     <h1 class="text-xl font-bold ml-10"><a href="/">My Website</a></h1>
-    <div class="flex flex-wrap items-center justify-between">
+    <nav class="btn-group preset-outlined-surface-200-800 flex flex-wrap items-center justify-between">
         <a href="/about"><button>About</button></a>
         <a href="/projects"><button>Projects</button></a>
         <a href="/contact"><button>Contact</button></a>
-    </div>
+    </nav>
     <div class="mr-26">
         <Switch checked={!isDark} onCheckedChange={() => isDark = !isDark} >
             <Switch.Control>

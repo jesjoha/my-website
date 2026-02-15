@@ -16,6 +16,7 @@
 @import '@skeletonlabs/skeleton/themes/vintage';
 @import '@skeletonlabs/skeleton/themes/mona';
 @import '@skeletonlabs/skeleton/themes/hamlindigo';
+@import '@skeletonlabs/skeleton/themes/crimson';
 
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
@@ -32,7 +33,7 @@
         @apply container mx-auto max-w-2xl items-center grow;
     }
     body {
-        @apply bg-primary-50 dark:bg-primary-950;
+        @apply bg-surface-50 dark:bg-surface-950;
         @apply text-primary-950 text-center dark:text-primary-50;
         @apply font-mono;
         @apply transition duration-100;
