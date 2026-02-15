@@ -27,17 +27,20 @@
             document.documentElement.classList.remove('dark');
         }
     }
+
+    let active = $state("/");
+    const links = ["about", "projects", "contact"];
     $effect(() => {
         updateTheme();
     });
 </script>
 
 <header class="items-center justify-between">
-    <h1 class="text-xl font-bold ml-10"><a href="/">My Website</a></h1>
-    <nav class="btn-group preset-outlined-surface-200-800 flex flex-wrap items-center justify-between">
-        <a href="/about"><button>About</button></a>
-        <a href="/projects"><button>Projects</button></a>
-        <a href="/contact"><button>Contact</button></a>
+    <h1 class="text-xl font-bold ml-10"><a href="/" onclick={() => (active = "home")}>My Website</a></h1>
+    <nav class="btn-group preset-outlined-surface-400-600 flex flex-wrap items-center justify-between">
+        {#each links as pageLink (pageLink)}
+            <a href="/{pageLink}"><button class="capitalize" class:preset-filled-primary-600-400={active === pageLink} onclick={() => (active = pageLink)}>{pageLink}</button></a>
+        {/each}
     </nav>
     <div class="mr-26">
         <Switch checked={!isDark} onCheckedChange={() => isDark = !isDark} >

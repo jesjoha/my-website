@@ -58,7 +58,6 @@
             <Toast.Message>
                 <Toast.Description>{toast.description}</Toast.Description>
             </Toast.Message>
-            <Toast.CloseTrigger />
         </Toast>
     {/snippet}
 </Toast.Group>

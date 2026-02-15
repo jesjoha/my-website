@@ -52,7 +52,9 @@
                                 Author: Me
                                 {#if project.link}
                                     <a href={project.link} target="_blank" rel="noopener noreferrer">
-                                        <GithubIcon />
+                                        <button>
+                                            <GithubIcon />
+                                        </button>
                                     </a>
                                 {/if}
                             </footer>
