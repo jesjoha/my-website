@@ -28,21 +28,21 @@
 
 <h1>Me</h1>
 <p class="m-10">This is my contact info. How about that?</p>
-<div class="card border-2 items-center justify-between flex p-10">
+<div class="card items-center justify-between flex p-10 shadows rounded-4xl">
     <Popover>
         <Popover.Trigger>
             <MailIcon/>
         </Popover.Trigger>
         <Portal>
             <Popover.Positioner>
-                <Popover.Content class="card max-w-md p-4 bg-surface-100-900 shadow-xl">
+                <Popover.Content class="card rounded-2xl max-w-md p-4 bg-surface-50-950 shadow-xl shadow-primary-300 dark:shadow-tertiary-800">
                     <Popover.Description class="flex items-center">
                         {email}
                         <button class="border-0" on:click={copyToClipboard}>
                             <CopyIcon />
                         </button>
                     </Popover.Description>
-                    <Popover.Arrow class="[--arrow-size:--spacing(2)] [--arrow-background:var(--color-surface-100-900)]">
+                    <Popover.Arrow class="[--arrow-size:--spacing(2)] [--arrow-background:var(--color-surface-50-950)]">
                         <Popover.ArrowTip />
                     </Popover.Arrow>
                 </Popover.Content>
@@ -54,7 +54,7 @@
 </div>
 <Toast.Group {toaster}>
     {#snippet children(toast)}
-        <Toast {toast} class="preset-tonal-primary">
+        <Toast {toast} class="preset-tonal-primary dark:preset-tonal-tertiary">
             <Toast.Message>
                 <Toast.Description>{toast.description}</Toast.Description>
             </Toast.Message>

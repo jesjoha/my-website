@@ -36,7 +36,7 @@
         {/if}
         <Accordion.Item value={project.id}>
             <h4>
-                <Accordion.ItemTrigger class="font-bold flex items-center justify-between gap-2 border-0">
+                <Accordion.ItemTrigger class="font-bold flex items-center justify-between gap-2 border-0 rounded-2xl hover:preset-filled-surface-500">
                     {project.title}
                     <Accordion.ItemIndicator class="group">
                         <ChevronDownIcon class="h-5 w-5 transition group-data-[state=open]:rotate-180" />
@@ -46,7 +46,7 @@
             <Accordion.ItemContent>
                 {#snippet element(attributes)}
                     {#if !attributes.hidden}
-                        <div {...attributes} transition:slide={{ duration: 150 }} class="card border-2">
+                        <div {...attributes} transition:slide={{ duration: 150 }} class="card border-2 p-10 rounded-2xl">
                             {project.description}
                             <footer class="flex flex-row justify-between">
                                 Author: Me

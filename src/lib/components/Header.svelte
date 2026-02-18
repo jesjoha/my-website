@@ -15,7 +15,6 @@
             // Detect system preference if no saved theme
             isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         }
-        console.log(isDark);
     });
 
     // Add or remove 'dark' class on <html>
@@ -28,24 +27,24 @@
         }
     }
 
-    let active = $state("/");
+    let active = $state("home");
     const links = ["about", "projects", "contact"];
     $effect(() => {
         updateTheme();
     });
 </script>
 
-<header class="items-center justify-between">
+<header class="items-center justify-between shadows">
     <h1 class="text-xl font-bold ml-10"><a href="/" onclick={() => (active = "home")}>My Website</a></h1>
-    <nav class="btn-group preset-outlined-surface-400-600 flex flex-wrap items-center justify-between">
+    <div class="btn-group items-center mr-16">
         {#each links as pageLink (pageLink)}
-            <a href="/{pageLink}"><button class="capitalize" class:preset-filled-primary-600-400={active === pageLink} onclick={() => (active = pageLink)}>{pageLink}</button></a>
+            <a href="/{pageLink}" class="link-button" class:preset-filled-primary-200-800={active === pageLink} class:dark:preset-filled-tertiary-200-800={active === pageLink} onclick={() => (active = pageLink)}>{pageLink}</a>
         {/each}
-    </nav>
-    <div class="mr-26">
+    </div>
+    <div class="mr-10">
         <Switch checked={!isDark} onCheckedChange={() => isDark = !isDark} >
-            <Switch.Control>
-                <Switch.Thumb>
+            <Switch.Control class="preset-filled-primary-200-800 dark:preset-filled-tertiary-200-800">
+                <Switch.Thumb >
                     <Switch.Context>
                         {#snippet children(switch_)}
                             {#if switch_().checked}
