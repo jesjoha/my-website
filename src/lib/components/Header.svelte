@@ -38,7 +38,7 @@
     <h1 class="text-xl font-bold ml-10"><a href="/" onclick={() => (active = "home")}>My Website</a></h1>
     <div class="btn-group items-center mr-16">
         {#each links as pageLink (pageLink)}
-            <a href="/{pageLink}" class="link-button" class:preset-filled-primary-200-800={active === pageLink} class:dark:preset-filled-tertiary-200-800={active === pageLink} onclick={() => (active = pageLink)}>{pageLink}</a>
+            <a href="/{pageLink}" class="link-button" class:preset-filled-primary-500={active === pageLink} class:dark:preset-filled-tertiary-200-800={active === pageLink} onclick={() => (active = pageLink)}>{pageLink}</a>
         {/each}
     </div>
     <div class="mr-10">
