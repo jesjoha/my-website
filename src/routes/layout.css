@@ -36,7 +36,7 @@
         @apply bg-surface-100-900;
         @apply text-surface-950-50 text-center;
         @apply font-sans;
-        @apply transition duration-100;
+        @apply transition duration-500;
     }
     h1 {
         @apply text-5xl;
