@@ -1,6 +1,6 @@
 <script>
     import { onMount } from 'svelte';
-    import { MoonIcon, SunIcon } from "@lucide/svelte";
+    import { MoonIcon, SunIcon, MenuIcon } from "@lucide/svelte";
     import { Switch } from "@skeletonlabs/skeleton-svelte";
 
 
@@ -36,11 +36,14 @@
 
 <header class="items-center justify-between shadows">
     <h1 class="text-xl font-bold ml-10"><a href="/" onclick={() => (active = "home")}>My Website</a></h1>
-    <div class="btn-group items-center mr-16">
+    <div class="hidden md:btn-group items-center mr-16">
         {#each links as pageLink (pageLink)}
             <a href="/{pageLink}" class="link-button" class:preset-filled-primary-500={active === pageLink} class:dark:preset-filled-tertiary-200-800={active === pageLink} onclick={() => (active = pageLink)}>{pageLink}</a>
         {/each}
     </div>
+    <button class="md:hidden p-2">
+        <MenuIcon />
+    </button>
     <div class="mr-10">
         <Switch checked={!isDark} onCheckedChange={() => isDark = !isDark} >
             <Switch.Control class="preset-filled-primary-200-800 dark:preset-filled-tertiary-200-800">

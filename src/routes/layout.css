@@ -30,7 +30,7 @@
     html {
     }
     main {
-        @apply container mx-auto max-w-4xl items-center grow;
+        @apply container mx-auto max-w-2xl w-full items-center grow;
     }
     body {
         @apply bg-surface-100-900;
