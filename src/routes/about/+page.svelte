@@ -24,7 +24,7 @@
                 ]
         },
         {
-            title: 'Something else',
+            title: 'Extra',
             paragraphs:
                 [
                     'I am the father of two wonderful children. I spend most of my time outside of my studies with them and their mother.',
@@ -37,7 +37,7 @@
 
 <p class="m-10">This is me. How about that?</p>
 <Tabs defaultValue={headings[0].title}>
-    <Tabs.List>
+    <Tabs.List class="max-w-2xs md:max-w-2xl border-0 md:border-b">
         {#each headings as heading}
             <Tabs.Trigger class="flex-1 border-0 hover:preset-filled-surface-500" value={heading.title}>{heading.title}</Tabs.Trigger>
         {/each}

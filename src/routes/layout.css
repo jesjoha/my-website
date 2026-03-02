@@ -30,7 +30,7 @@
     html {
     }
     main {
-        @apply container mx-auto max-w-2xl w-full items-center grow;
+        @apply container mx-auto max-w-xs w-full items-center grow min-h-dvh;
     }
     body {
         @apply bg-surface-100-900;
@@ -55,7 +55,7 @@
         @apply preset-filled-primary-500 dark:preset-filled-tertiary-500;
     }
     header {
-        @apply flex items-center justify-between p-4 mb-10 container mx-auto max-w-5xl rounded-4xl mt-4;
+        @apply flex items-center justify-between p-1.5 mb-10 container mx-auto max-w-xs rounded-4xl mt-4;
     }
     .link-button {
         @apply btn capitalize preset-outlined-primary-300-700 dark:preset-outlined-tertiary-200-800 rounded-2xl p-2 ml-4 mr-4;
