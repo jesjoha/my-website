@@ -39,7 +39,11 @@
         @apply transition duration-500;
     }
     h1 {
-        @apply text-5xl;
+        @apply text-2xl lg:text-5xl;
+        @apply text-surface-950-50;
+    }
+    h2 {
+        @apply text-xl lg:text-4xl;
         @apply text-surface-950-50;
     }
     h4 {

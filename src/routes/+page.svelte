@@ -1,8 +1,7 @@
 <script>
 </script>
 
-<div class="card rounded-4xl flex-row items-center grow p-10 shadows">
+<div class="card rounded-4xl flex-row items-center grow p-4 space-y-4 lg:space-y-10 lg:p-10 shadows">
     <h1>Welcome to my first own webpage!</h1>
-    <p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
-    <h4>How about them ubuntu packages huh??</h4>
+    <h2 class="p-1">Please have a look around!</h2>
 </div>
