@@ -27,7 +27,7 @@
             title: 'Extra',
             paragraphs:
                 [
-                    'I am the father of two wonderful children. I spend most of my time outside of my studies with them and their mother.',
+                    'I am the father of two wonderful children. I spend most of my time outside of my studies with them and my wife.',
                 ]
         }
     ]

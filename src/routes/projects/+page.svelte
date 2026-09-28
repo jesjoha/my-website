@@ -6,8 +6,11 @@
     const projects = [
         {
             id: 1,
-            title: "Project 1",
-            description: "This project is used to create a project",
+            title: "WorkoutPlanner",
+            description: "I have created a new course project for a course on object-oriented software design. The application is a workout planner where the user can plan and perform workouts. " + 
+                        "An exercise library is stored in json and the user can add exercises to and remove them from the library in a dedicated tab. Completed workouts are saved and used for statistics. " + 
+                        "The project is developed in Java with JavaFX for the GUI. The Jackson-library is used to handle parsing to and from json. The project uses several common design pattern from the course. " + 
+                        "Because of the risk of plagiarism and cheating in future course versions, the source code can unfortunately not be shared.",
 
         },
         {
@@ -49,7 +52,6 @@
                         <div {...attributes} transition:slide={{ duration: 150 }} class="card border-2 p-10 rounded-2xl">
                             {project.description}
                             <footer class="flex flex-row justify-between">
-                                Author: Me
                                 {#if project.link}
                                     <a href={project.link} target="_blank" rel="noopener noreferrer">
                                         <button>
