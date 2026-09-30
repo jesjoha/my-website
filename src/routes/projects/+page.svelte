@@ -15,15 +15,16 @@
         },
         {
             id: 2,
-            title: "Project 2",
-            description: "This project is used to create a project and this was project nr 2.",
-            link: "https://github.com",
+            title: "My website",
+            description: "You are looking at it right now. My own website to present myself, what I have done and what I can do. It is mostly for practicing my own (frontend) skills but if someone else find something useful from it, that is great!",
+            link: "https://github.com/jesjoha/my-website",
         },
         {
             id: 3,
-            title: "Project 3",
-            description: "This is the final project of the test.",
-            link: "https://ecosia.org",
+            title: "FoodPlanner (in progress)",
+            description: "This a project meant for our family. We sometimes struggle with planning the meals for a week. My wife has been asking for this for some time already so it is time to get this project running! " + 
+                          "I'm still not sure if the project name should be FoodPlanner or MealPlanner...",
+            link: "https://github.com/jesjoha/FoodPlanner",
         }
     ];
 
